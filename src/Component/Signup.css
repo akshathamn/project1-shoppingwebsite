@@ -1,0 +1,31 @@
+@media all and (min-width: 480px) {
+    .Login {
+      padding: 60px 0;
+    }
+  
+    .Login form {
+      margin: 0 auto;
+      max-width: 320px;
+    }
+  }
+
+  .bg-img
+  {
+    background-image: url("../images/nature.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 648px;
+  }
+  .bg-signup
+  {
+    background-image: url("../images/surprise.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 648px;
+    /* filter: blur(1px); */
+  }
+  

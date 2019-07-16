@@ -1,20 +1,20 @@
 import React, { Component } from "react";
+// import nature from '../images/nature.jpg';
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 import "./Signup.css";
 
-export default class Signup extends Component {
+export default class Login extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       email: "",
-      password: "",
-      Confirmpassword: ""
+      password: ""
     };
   }
 
   validateForm() {
-    return this.state.email.length > 0 && this.state.password.length && this.state.Confirmpassword.length > 0;
+    return this.state.email.length > 0 && this.state.password.length > 0;
   }
 
   handleChange = event => {
@@ -29,9 +29,10 @@ export default class Signup extends Component {
 
   render() {
     return (
-
-      <div className="Login bg-signup">
-        <form onSubmit={this.handleSubmit}>
+      <div className="Login bg-img">
+          <form onSubmit={this.handleSubmit}>
+          {/* <img className="col-md-12 col-lg-12" src={nature} alt="logo"/> */}
+        
           <FormGroup controlId="email" bsSize="large">
             <p>Email</p>
             <FormControl
@@ -49,23 +50,17 @@ export default class Signup extends Component {
               type="password"
             />
           </FormGroup>
-          <FormGroup controlId="Confirmpassword" bsSize="large">
-            <p>ConfirmPassword</p>
-            <FormControl
-              value={this.state.Confirmpassword}
-              onChange={this.handleChange}
-              type="Confirmpassword"
-            />
-          </FormGroup>
           <Button
             block
             bsSize="large"
             disabled={!this.validateForm()}
             type="submit"
           >
-            Signup
+            Login
           </Button>
+         
         </form>
+       
       </div>
     );
   }
