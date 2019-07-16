@@ -57,9 +57,10 @@ const CardExample = () => {
   return (
     <MDBCol>
       <MDBCard style={{ width: "22rem" }}>
+      <MDBCardTitle>Doll</MDBCardTitle>
         <MDBCardImage className="img-fluid" src={require("../images/basket.jpg")} waves />
         <MDBCardBody>
-          <MDBCardTitle>Card title</MDBCardTitle>
+          
           <MDBCardText>
             Some quick example text to build on the card title and make
             up the bulk of the card&apos;s content.
