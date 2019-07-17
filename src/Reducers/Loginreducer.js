@@ -1,5 +1,5 @@
 import * as ActionTypes from '../Action/Type';
-import browserhistory from '../Utils/browserHistory';
+// import browserhistory from '../Utils/browserHistory';
 const initialState = {
     Email: '',
     Password: ''
@@ -8,7 +8,7 @@ const initialState = {
 export default (state = initialState, action) => {
     switch (action.type) {
         case ActionTypes.LOGIN: {
-            browserhistory.push("/Shop");
+            // browserhistory.push("/Shop");
             return { ...state }
 
             break;

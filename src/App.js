@@ -9,7 +9,7 @@ import Login from './Component/Login';
 // import Shop from './Component/Shop';
 import Products from './Component/Products';
 // import Orders from './Component/Orders';
-// import Addproduct from './Component/Addproduct';
+import Addproduct from './Component/Addproduct';
 // import Adminproduct from './Component/Adminproduct';
 import Home from './Component/Home';
 function App() {
@@ -24,7 +24,7 @@ function App() {
       {/* <Route exact path='/Shop' component={Shop}></Route> */}
       <Route exact path='/Products' component={Products}></Route>
       {/* <Route exact path='/Orders' component={Orders}></Route> */}
-      {/* <Route exact path='/Addproduct' component={Addproduct}></Route> */}
+      <Route exact path='/Addproduct' component={Addproduct}></Route>
       {/* <Route exact path='/Adminproduct' component={Adminproduct}></Route> */}
     </Switch>
   </Router>

@@ -16,9 +16,11 @@ class Home extends Component {
   render() {
     return (
       <div>
-        {/* <img src="%image_path(../images/shop.jpeg)%" /> */}
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
        
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
+        <a class="nav-item ">
+        <img class="img1"   src={require('../images/brand1.png')} alt="Card image cap"></img>
+              </a>
           <a class="navbar-brand" href="#">Henry</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -26,12 +28,12 @@ class Home extends Component {
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
               <li class="nav-item ">
-                <a class="nav-link" href="#">Shop<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./Products">Shop<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Products</a>
+                <a class="nav-link" href="./Addproduct">AddProducts</a>
               </li>
-              <li class="nav-item">
+              {/* <li class="nav-item">
                 <a class="nav-link" href="#">Orders</a>
               </li>
               <li class="nav-item">
@@ -39,7 +41,7 @@ class Home extends Component {
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Adminproduct</a>
-              </li>
+              </li> */}
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <button class="btn btn-outline-secondary mr-sm-2" type="submit" onClick={this.handlepress} >Signup</button>

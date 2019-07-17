@@ -61,7 +61,7 @@ export default class Signup extends Component {
             block
             bsSize="large"
             disabled={!this.validateForm()}
-            type="submit"
+            type="submit" 
           >
             Signup
           </Button>
