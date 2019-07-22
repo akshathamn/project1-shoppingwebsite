@@ -22,8 +22,8 @@ class Footer extends Component {
  <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
  <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
  <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
- </div ><h5  className="color"><b>Hennry Shopping</b></h5>
- <p  className="color">1021 Park Street, Regina, SK S4N 5H4, Canada</p>
+ </div ><h5  ><b>Hennry Shopping</b></h5>
+ <p >1021 Park Street, Regina, SK S4N 5H4, Canada</p>
  </div>
  <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
  </div>

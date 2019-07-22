@@ -4,6 +4,10 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 import Signup from './Component/Signup';
 import Login from './Component/Login';
+import Navbar from './Component/Navbar';
+import Footer from './Component/Footer';
+
+
 
 
 // import Shop from './Component/Shop';
@@ -16,6 +20,7 @@ function App() {
   return (
     <div>
   <Router>
+    <Navbar />
     <Switch>
     <Route exact path='/' component={Home}></Route> 
       <Route exact path='/Signup' component={Signup}></Route> 
@@ -27,6 +32,7 @@ function App() {
       <Route exact path='/Addproduct' component={Addproduct}></Route>
       {/* <Route exact path='/Adminproduct' component={Adminproduct}></Route> */}
     </Switch>
+    <Footer />
   </Router>
   </div>
    );
