@@ -5,7 +5,7 @@ class Products extends Component {
   render() {
     return (
       <div class="container">
-       <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
+       {/* <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
          <a class="nav-item ">
             <img class="img1" src={require('../images/brand1.png')} alt="Card image cap"></img>
           </a>
@@ -36,9 +36,10 @@ class Products extends Component {
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit " onClick={this.handlepress1}>Login</button>
             </form>
             </div>
-        </nav>
+        </nav> */}
 
         <div class="row text-center ">
+      
           <div class="card-deck">
             <div class="card  ">
               <h5 class="card-header">Doll</h5>
@@ -113,6 +114,7 @@ class Products extends Component {
           </div>
         </div>
       </div>
+    
     );
   }
 }
