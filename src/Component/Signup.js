@@ -1,20 +1,22 @@
 import React, { Component } from "react";
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 import "./Signup.css";
-
-export default class Signup extends Component {
+import { sign } from '../Action/Signupaction';
+import {signup} from './UserFunction';
+import {connect} from 'react-redux'; 
+class Signup extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       email: "",
       password: "",
-      Confirmpassword: ""
+      confirmpassword: ""
     };
   }
 
   validateForm() {
-    return this.state.email.length > 0 && this.state.password.length && this.state.Confirmpassword.length > 0;
+    return this.state.email.length > 0 && this.state.password.length && this.state.confirmpassword.length > 0;
   }
 
   handleChange = event => {
@@ -25,8 +27,26 @@ export default class Signup extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-  }
-
+  // }
+ 
+    const {  email, password, confirmpassword } = this.state;
+    this.setState({ submitted: true });
+    // if (firstName && username && email && password && confirmPassword && mobileNumber) {
+    // this.props.history.push('/login');
+    
+    // }
+    const user = {
+    
+    email: this.state.email,
+    password: this.state.password,
+    confirmpassword: this.state.confirmpassword,
+     }
+     signup(user).then(res => {
+    if (email&&password && confirmpassword) {
+    this.props.history.push('/login')
+    }
+    })
+    }
   render() {
     return (
 
@@ -49,12 +69,12 @@ export default class Signup extends Component {
               type="password"
             />
           </FormGroup>
-          <FormGroup controlId="Confirmpassword" bsSize="large">
+          <FormGroup controlId="confirmpassword" bsSize="large">
             <p>ConfirmPassword</p>
             <FormControl
-              value={this.state.Confirmpassword}
+              value={this.state.confirmpassword}
               onChange={this.handleChange}
-              type="Confirmpassword"
+              type="password"
             />
           </FormGroup>
           <Button
@@ -70,3 +90,13 @@ export default class Signup extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  const { email } = state.Signupreducer;
+
+  const { password } = state.Signupreducer;
+  const { confirmpassword } = state.Signupreducer;
+  // const{message}=state.Registerreducer;
+  return {  email, password,confirmpassword };
+
+};
+export default connect(mapStateToProps, { sign })(Signup);

@@ -2,8 +2,11 @@ import React, { Component } from "react";
 // import nature from '../images/nature.jpg';
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 import "./Signup.css";
+import {login} from './UserFunction';
+import {connect} from 'react-redux'; 
+import { log } from '../Action/Loginaction';
 
-export default class Login extends Component {
+ class Login extends Component {
   constructor(props) {
     super(props);
 
@@ -25,7 +28,25 @@ export default class Login extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-  }
+  // }
+  const {  email, password } = this.state;
+    this.setState({ submitted: true });
+    // if (firstName && username && email && password && confirmPassword && mobileNumber) {
+    // this.props.history.push('/login');
+    
+    // }
+    const user = {
+    
+    email: this.state.email,
+    password: this.state.password,
+    
+     }
+    login(user).then(res => {
+    if (email&&password ) {
+    this.props.history.push('/Home')
+    }
+    })
+    }
 
   render() {
     return (
@@ -65,3 +86,10 @@ export default class Login extends Component {
     );
   }
 }
+const mapStateToProps = (state) => {
+  const { email } = state.Loginreducer;
+  const { password } = state.Loginreducer;
+  return {  email, password };
+
+};
+export default connect(mapStateToProps, { log })(Login);

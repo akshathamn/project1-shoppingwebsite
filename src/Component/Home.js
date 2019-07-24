@@ -15,7 +15,7 @@ class Home extends Component {
   //     }
   render() {
     return (
-      <div>
+      <div  >
 {/*        
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
         <a class="nav-item ">
@@ -44,8 +44,7 @@ class Home extends Component {
           </div>
         </nav> */}
 
-   
- <img className="col-md-12 col-lg-12" src={shop} alt="logo"/>
+<img className="col-md-12 col-lg-12" src={shop} alt="logo"/>
 
 
 
@@ -87,6 +86,7 @@ class Home extends Component {
  </div>
  </div>
  </div> */}
+ 
 
 
       </div>

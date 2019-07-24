@@ -1,8 +1,8 @@
 import *as ActionTypes from './Type';
-export function sign() {
+export function log() {
     return function (dispatch) {
         dispatch({
-            type: "SIGNUP"
+            type: "LOGIN"
         });
     }
 }
