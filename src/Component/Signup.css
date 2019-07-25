@@ -28,4 +28,7 @@
     height: 800px;
     /* filter: blur(1px); */
   }
-  
+  .msg
+  {
+    color: red;
+  }
