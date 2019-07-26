@@ -1,11 +1,20 @@
 import React, { Component } from 'react';
-import shop from '../images/shop.jpeg';
-import './Home.css';
-import browserHistory from '../Utils/browserHistory';
-import { SocialIcon } from 'react-social-icons';
+import { connect } from 'react-redux';
+import { fetchProducts } from '../Action/Productasction';
+import Productss from '../Component/Productss';
 
-class Home extends Component {
-  // handlepress = () => {
+
+
+
+
+// import React, { Component } from 'react';
+// import shop from '../images/shop.jpeg';
+// import './Home.css';
+// import browserHistory from '../Utils/browserHistory';
+// import { SocialIcon } from 'react-social-icons';
+
+// class Home extends Component {
+//   // handlepress = () => {
   //   debugger
   //   browserHistory.push('/Signup');
   //   }
@@ -13,9 +22,9 @@ class Home extends Component {
   //     debugger
   //     browserHistory.push('/Login');
   //     }
-  render() {
-    return (
-      <div  >
+  // render() {
+  //   return (
+  //     <div  >
 {/*        
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
         <a class="nav-item ">
@@ -44,7 +53,7 @@ class Home extends Component {
           </div>
         </nav> */}
 
-<img className="col-md-12 col-lg-12" src={shop} alt="logo"/>
+{/* <img className="col-md-12 col-lg-12" src={shop} alt="logo"/> */}
 
 
 
@@ -88,13 +97,13 @@ class Home extends Component {
  </div> */}
  
 
-
+{/* 
       </div>
     );
   }
 }
 
-export default Home;
+export default Home; */}
 
 
 
@@ -136,3 +145,33 @@ export default Home;
 // </div>
 // </div>
 // </div>
+
+
+
+
+// import React, { Component } from 'react';
+// import { connect } from 'react-redux';
+// import { fetchProducts } from '../Action/Productasction';
+// import Productss from '../Component/Productss';
+
+class Home extends Component {
+
+  componentDidMount() {
+    this.props.fetchProducts();   
+  }
+
+  render() {
+    return (
+      <main>
+        <Productss products={ this.props.products } />
+      </main>
+    );
+  }
+}
+
+const mapStateToProps = state => ({
+  products: state.products,
+  // cart: state.cart
+});
+
+export default connect(mapStateToProps, {fetchProducts})(Home);
