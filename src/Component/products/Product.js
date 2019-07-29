@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Spinner from "../common/Spinner";
-import { getProduct } from "../../actions/productActions";
+import { getProduct } from "../../Action/productActions";
 // import ProductItem from "./ProductItem";
 
 class Product extends Component {

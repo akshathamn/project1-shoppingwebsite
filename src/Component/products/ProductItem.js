@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import { deleteProduct } from "../../actions/productActions";
-import { addToCart } from "../../actions/cartAction";
+import { deleteProduct } from "../../Action/productActions";
+import { addToCart } from "../../Action/cartAction";
 
 class ProductItem extends Component {
   // adds cart item to cart list

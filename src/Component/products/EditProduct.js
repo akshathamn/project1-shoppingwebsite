@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 import { withRouter } from "react-router-dom";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import TextFieldGroup from "../common/TextFieldGroup";
-import { editProduct, getCurrentProduct } from "../../actions/productActions";
+import { editProduct, getCurrentProduct } from "../../Action/productActions";
 import isEmpty from "../../validation/is-empty";
 
 class ProductForm extends Component {

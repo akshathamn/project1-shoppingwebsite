@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import TextAreaFieldGroup from "../common/TextAreaFieldGroup";
 import TextFieldGroup from "../common/TextFieldGroup";
-import { addProduct } from "../../actions/productActions";
+import { addProduct } from "../../Action/productActions";
 import ImageUpload from "../common/ImageUpload";
 import axios from "axios";
 
