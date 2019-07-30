@@ -51,11 +51,7 @@ function App() {
     <Route exact path='/products' component={EditProduct}></Route> 
 
     
-                <Route
-                  exact
-                  path="/add-product"
-                  component={ProductForm}
-                />
+                
     <Route exact path='/cart' component={Cart}></Route> 
 
 
