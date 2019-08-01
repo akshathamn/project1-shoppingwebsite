@@ -33,6 +33,9 @@ class Navbar extends Component {
                 <li class="nav-item">
                   <a class="nav-link" href="./Addproduct">AddProducts</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./index">Index</a>
+                </li>
                 {/* <li class="nav-item">
                   <a class="nav-link" href="#">Orders</a>
                 </li>

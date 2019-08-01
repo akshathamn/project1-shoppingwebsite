@@ -16,8 +16,7 @@ class Login extends Component {
       pswd: ""
       // submitted: false
     };
-    // this.handleChange = this.handleChange.bind(this);
-    // this.handleSubmit = this.handleSubmit.bind(this);
+   
   }
 
   validateForm() {
@@ -34,10 +33,7 @@ class Login extends Component {
     event.preventDefault();
     const { email, password } = this.state;
     this.setState({ submitted: true });
-    // if (firstName && username && email && password && confirmPassword && mobileNumber) {
-    // this.props.history.push('/login');
-
-    // }
+   
     const user = {
       email: this.state.email,
       password: this.state.password,

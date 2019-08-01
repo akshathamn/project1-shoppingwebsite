@@ -9,15 +9,12 @@ import Footer from './Component/Footer';
 // import CartItem from './Component/CartItem';
 // import Cart from './Component/Cart'
 import Addproduct from './Component/Addproduct';
-// import Products from "./Component/products/Products";
-// import Product from "./Component/products/Product";
-// import ProductForm from "./Component/products/ProductForm";
-// import EditProduct from "./Component/products/EditProduct";
+
 import Cart from "./Component/cart/Cart";
 
 
 
-
+import index from './Component/index';
 // import Shop from './Component/Shop';
 import Products from './Component/Products';
 // import Orders from './Component/Orders';
@@ -43,14 +40,10 @@ function App() {
       {/* <Route exact path='/CartItem' component={CartItem}></Route>
       <Route exact path='/Cart' component={Cart}></Route> */}
       <Route exact path='/Addproduct' component={Addproduct}></Route>
+      <Route exact path='/index' component={index}></Route>
+   
 
-    {/* <Route exact path='/Product' component={Product}></Route>  */}
-    {/* <Route exact path='/products' component={Products}></Route> 
-    <Route exact path='/products' component={Product}></Route> 
-    <Route exact path='/products' component={ProductForm}></Route> 
-    <Route exact path='/products' component={EditProduct}></Route> 
-
-     */}
+    
                 
     <Route exact path='/cart' component={Cart}></Route> 
 
@@ -58,7 +51,7 @@ function App() {
 
     </Switch>
     
-    <Footer />
+    {/* <Footer /> */}
   </Router>
   </div>
    );
