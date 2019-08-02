@@ -10,7 +10,7 @@ import Footer from './Component/Footer';
 // import Cart from './Component/Cart'
 import Addproduct from './Component/Addproduct';
 
-import Cart from "./Component/cart/Cart";
+import Cart from "./Component/Cart";
 
 
 
@@ -45,13 +45,13 @@ function App() {
 
     
                 
-    <Route exact path='/cart' component={Cart}></Route> 
+    <Route exact path='/Cart' component={Cart}></Route> 
 
 
 
     </Switch>
     
-    {/* <Footer /> */}
+    <Footer />
   </Router>
   </div>
    );

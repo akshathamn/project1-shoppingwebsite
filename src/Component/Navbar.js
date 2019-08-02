@@ -27,15 +27,22 @@ class Navbar extends Component {
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
               <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
+                {/* <li class="nav-item ">
                   <a class="nav-link" href="./Products">Shop<span class="sr-only">(current)</span></a>
-                </li>
+                </li> */}
+
+
                 <li class="nav-item">
                   <a class="nav-link" href="./Addproduct">AddProducts</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="./index">Index</a>
+                  <a class="nav-link" href="./index">Shop</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./cart">Cart</a>
+                </li>
+
+                
                 {/* <li class="nav-item">
                   <a class="nav-link" href="#">Orders</a>
                 </li>
