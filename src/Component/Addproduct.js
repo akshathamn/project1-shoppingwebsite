@@ -59,6 +59,8 @@ export default class Addproduct extends Component {
   }
 
 
+  
+
   render() {
     return (
       <div style={{ marginTop: 10 }}>

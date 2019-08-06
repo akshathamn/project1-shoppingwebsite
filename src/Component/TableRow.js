@@ -1,13 +1,34 @@
 import React, { Component } from 'react';
 import { Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button } from 'reactstrap';
-
+    import axios from 'axios';
 class TableRow extends Component {
-    
+//   constructor(props) {
+//     super(props);
+//   this.onSubmit = this.onSubmit.bind(this);
+//   this.state = {
+//     title: '',
+//     price: '',
+//     image: '',
+//     description: ''
+//   }
+// }
+//   onSubmit(e) {
+//     e.preventDefault();
+//     const obj = {
+//       title: this.state.title,
+//       price: this.state.price,
+//       image: this.state.image,
+//       description: this.state.description
+//     };
+//     axios.post('http://localhost:3008/product/addproduct', obj)
+//       .then(res => console.log(res.data));
+//     this.props.history.push('/Cart')
+//   }
   render() {
     return (
         <Card>
-       
+     
         <CardBody>
           <CardTitle> {this.props.obj.title}</CardTitle>
           
@@ -17,29 +38,11 @@ class TableRow extends Component {
           <CardTitle> {this.props.obj.description}</CardTitle>
          
           <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
-          <Button className="btn btn-danger">Add To Cart</Button>
+          <Button onSubmit={this.onSubmit} className="btn btn-danger">Add To Cart</Button>
         </CardBody>
+       
       </Card>
-        // <tr>
-        //   <td>
-        //     {this.props.obj.title}
-        //   </td>
-        //   <td>
-        //     {this.props.obj.price}
-        //   </td>
-        //   <td>
-        //     {this.props.obj.image}
-        //   </td>
-        //   <td>
-        //     {this.props.obj.description}
-        //   </td>
-        //   <td>
-        //     <button className="btn btn-primary">Details</button>
-        //   </td>
-        //   <td>
-        //     <button onClick={this.submit} className="btn btn-danger">Add To Cart</button>
-        //   </td>
-        // </tr>
+     
     );
   }
 }

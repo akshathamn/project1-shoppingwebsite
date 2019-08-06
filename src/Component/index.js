@@ -35,14 +35,11 @@ export default class Index extends Component {
             <thead>
               <tr>
                 <th>Welcome,Add Your Products to Cart</th>
-                {/* <th>Price</th>
-                <th>Image</th>
-                <th>Description</th>
-                <th colSpan="2">Action</th> */}
               </tr>
             </thead>
             <tbody>
               { this.tabRow() }
+              
             </tbody>
           </table>
         </div>

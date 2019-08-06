@@ -7,7 +7,9 @@ export default class Cart extends Component {
   constructor(props) {
       super(props);
       this.state = {product: []};
+   
     }
+ 
     componentDidMount(){
         // debugger;
       axios.get('http://localhost:3008/product/getproduct')
@@ -29,18 +31,17 @@ export default class Cart extends Component {
 
     render() {
       return (
+      
         <div>
-          <h3 align="center">Cart List</h3>
-          <table className="table table-striped" style={{ marginTop: 20 }}>
-            <thead>
-              <tr>
-                {/* <th>Welcome,Add Your Products to Cart</th> */}
-                {/* <th>Price</th>
-                <th>Image</th>
-                <th>Description</th>
-                <th colSpan="2">Action</th> */}
-              </tr>
-            </thead>
+        
+        //   <h3 align="center">Cart List</h3>
+        //   <table className="table table-striped" style={{ marginTop: 20 }}>
+            {/* <thead> */}
+              {/* <tr> */}
+            
+              {/* //     <div className="col-sm-2 text-right">qty: {this.state.qty}</div> */}
+              {/* </tr> */}
+            {/* </thead> */}
             <tbody>
               { this.tabRow() }
               <button className="btn btn-danger">Order Now!</button>
@@ -50,3 +51,11 @@ export default class Cart extends Component {
       );
     }
   }
+
+
+
+
+
+
+
+  

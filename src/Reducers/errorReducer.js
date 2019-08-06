@@ -1,12 +1,12 @@
-import { GET_ERRORS } from "../Action/Type";
+// import { GET_ERRORS } from "../Action/Type";
 
-const initialState = {};
+// const initialState = {};
 
-export default function(state = initialState, action) {
-  switch (action.type) {
-    case GET_ERRORS:
-      return action.payload;
-    default:
-      return state;
-  }
-}
+// export default function(state = initialState, action) {
+//   switch (action.type) {
+//     case GET_ERRORS:
+//       return action.payload;
+//     default:
+//       return state;
+//   }
+// }
