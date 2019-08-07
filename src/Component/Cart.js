@@ -34,8 +34,8 @@ export default class Cart extends Component {
       
         <div>
         
-        //   <h3 align="center">Cart List</h3>
-        //   <table className="table table-striped" style={{ marginTop: 20 }}>
+           <h3 align="center">Cart List</h3>
+          <table className="table table-striped" style={{ marginTop: 20 }}>
             {/* <thead> */}
               {/* <tr> */}
             

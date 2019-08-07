@@ -58,13 +58,10 @@ export default class Addproduct extends Component {
     })
   }
 
-
-  
-
   render() {
     return (
       <div style={{ marginTop: 10 }}>
-        <h3>Add New Product</h3>
+      <h3>Add New Product</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
             <label>Title:  </label>
