@@ -70,14 +70,16 @@ export default class Addproduct extends Component {
               className="form-control"
               value={this.state.title}
               onChange={this.onChangeTitle}
+              required
             />
           </div>
           <div className="form-group">
             <label>Price: </label>
-            <input type="text"
+            <input type="number"
               className="form-control"
               value={this.state.price}
               onChange={this.onChangePrice}
+              required
             />
           </div>
           <div className="form-group">
@@ -86,6 +88,7 @@ export default class Addproduct extends Component {
               className="form-control"
               value={this.state.image}
               onChange={this.onChangeImage}
+              required
             />
           </div>
           <div className="form-group">
@@ -94,6 +97,7 @@ export default class Addproduct extends Component {
               className="form-control"
               value={this.state.description}
               onChange={this.onChangeDescription}
+              required
             />
           </div>
           <div className="form-group">

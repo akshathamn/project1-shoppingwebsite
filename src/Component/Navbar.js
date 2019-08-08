@@ -30,15 +30,7 @@ class Navbar extends Component {
               {/* <li class="nav-item ">
                   <a class="nav-link" href="./Products">Shop<span class="sr-only">(current)</span></a>
                 </li> */}
-              <li class="nav-item">
-                <a class="nav-link" href="./Addproduct">AddProducts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./index">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./cart">Cart</a>
-              </li>
+              
 
 
               {/* <li class="nav-item">

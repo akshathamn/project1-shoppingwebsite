@@ -3,13 +3,13 @@ import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Signup from './Component/Signup';
 import Login from './Component/Login';
-import Navbar from './Component/Navbar';
+// import Navbar from './Component/Navbar';
 import Footer from './Component/Footer';
 import Home from './Component/Home';
-
 import Addproduct from './Component/Addproduct';
 import index from './Component/index';
 import Cart from "./Component/Cart";
+import Authhome from "./Component/Authhome";
 // import Shop from './Component/Shop';
 // import Adminproduct from './Component/Adminproduct';
 
@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
   <Router>
-    <Navbar />
+    {/* <Navbar /> */}
     <Switch>
       <Route exact path='/' component={Home}></Route> 
       <Route exact path='/Signup' component={Signup}></Route> 
@@ -26,6 +26,8 @@ function App() {
       <Route exact path='/Addproduct' component={Addproduct}></Route>
       <Route exact path='/index' component={index}></Route>
       <Route exact path='/Cart' component={Cart}></Route> 
+      <Route exact path='/Authhome' component={Authhome}></Route> 
+
     </Switch>
     <Footer />
   </Router>

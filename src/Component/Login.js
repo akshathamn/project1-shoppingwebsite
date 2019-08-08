@@ -41,7 +41,7 @@ class Login extends Component {
     }
     login(user).then(res => {
       if (email && password) {
-        this.props.history.push('/Addproduct')
+        this.props.history.push('/Authhome')
       }
     })
     let temp1 = 0;

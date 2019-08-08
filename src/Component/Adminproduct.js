@@ -1,6 +1,6 @@
 // import React, { Component } from 'react';
 // import axios from 'axios';
-// import TableRow from './TableRow';
+// import Admintable from './Admintable';
 
 // export default class Adminproduct extends Component {
 
@@ -23,7 +23,7 @@
 
 //     tabRow(){
 //       return this.state.product.map(function(object, i){
-//           return <TableRow obj={object} key={i} />;
+//           return <Admintable obj={object} key={i} />;
 //       });
 //     }
 

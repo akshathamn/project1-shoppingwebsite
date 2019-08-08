@@ -25,7 +25,7 @@ class TableRow extends Component {
           <CardTitle> {this.props.obj.price}</CardTitle>
           <CardTitle>  {this.props.obj.image}</CardTitle>
           <CardTitle> {this.props.obj.description}</CardTitle>
-          <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText>
+          {/* <CardText>Some quick example text to build on the card title and make up the bulk of the card's content.</CardText> */}
           {this.renderRedirect()}
           <Button onClick={this.setRedirect} className="btn btn-danger">Add To Cart</Button>
         </CardBody>
