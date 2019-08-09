@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import TableRows from './TableRows';
+import AuthNavbar from './AuthNavbar';
 
 export default class Cart extends Component {
 
@@ -31,17 +32,10 @@ export default class Cart extends Component {
 
     render() {
       return (
-      
-        <div>
-        
+      <div style={{ marginTop: 90 }}>
+        <AuthNavbar/>
            <h3 align="center">Cart List</h3>
           <table className="table table-striped" style={{ marginTop: 20 }}>
-            {/* <thead> */}
-              {/* <tr> */}
-            
-              {/* //     <div className="col-sm-2 text-right">qty: {this.state.qty}</div> */}
-              {/* </tr> */}
-            {/* </thead> */}
             <tbody>
               { this.tabRow() }
               <button className="btn btn-danger">Order Now!</button>

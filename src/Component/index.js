@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import TableRow from './TableRow';
+import AuthNavbar from './AuthNavbar';
 
 export default class Index extends Component {
 
@@ -30,8 +31,9 @@ export default class Index extends Component {
     render() {
       return (
         <div>
+          <AuthNavbar/>
           <h3 align="center">Product List</h3>
-          <table className="table table-striped" style={{ marginTop: 20 }}>
+          <table className="table table-striped" style={{ marginTop: 30 }}>
             <thead>
               <tr>
                 <th>Welcome,Add Your Products to Cart</th>

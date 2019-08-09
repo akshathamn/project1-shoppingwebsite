@@ -34,6 +34,9 @@ class AuthNavbar extends Component {
               <li class="nav-item">
                 <a class="nav-link" href="./cart">Cart</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Adminproduct">Adminproduct</a>
+              </li>
               {/* <li class="nav-item">
                   <a class="nav-link" href="#">Orders</a>
                 </li>

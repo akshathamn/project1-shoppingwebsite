@@ -11,7 +11,7 @@ import index from './Component/index';
 import Cart from "./Component/Cart";
 import Authhome from "./Component/Authhome";
 // import Shop from './Component/Shop';
-// import Adminproduct from './Component/Adminproduct';
+import Adminproduct from './Component/Adminproduct';
 
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
       <Route exact path='/index' component={index}></Route>
       <Route exact path='/Cart' component={Cart}></Route> 
       <Route exact path='/Authhome' component={Authhome}></Route> 
+      <Route exact path='/Adminproduct' component={Adminproduct}></Route> 
 
     </Switch>
     <Footer />

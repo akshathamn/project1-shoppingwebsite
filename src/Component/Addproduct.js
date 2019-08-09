@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import AuthNavbar from './AuthNavbar';
 
 export default class Addproduct extends Component {
   constructor(props) {
@@ -60,7 +61,17 @@ export default class Addproduct extends Component {
 
   render() {
     return (
-      <div style={{ marginTop: 10 }}>
+<div class="container">
+  <div class="row">
+    <div className="col-md-12 col-md-12">
+      <AuthNavbar/>
+      </div>
+      </div>
+      <div class="row">
+      <div className="col-md-12 col-md-12">
+
+      <div style={{ marginTop: 30 }}>
+      
       <h3>Add New Product</h3>
         <form onSubmit={this.onSubmit}>
           <div className="form-group">
@@ -104,7 +115,12 @@ export default class Addproduct extends Component {
             <input type="submit" value="Add Product" className="btn btn-primary" />
           </div>
         </form>
-      </div>
+        </div>
+        </div>
+
+</div>
+</div>
+     
     )
   }
 }
