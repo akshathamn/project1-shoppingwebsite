@@ -3,18 +3,13 @@ import * as ActionTypes from '../Action/Type';
 const initialState = {
     email: '',
     password: ''
-
 };
 export default (state = initialState, action) => {
     switch (action.type) {
         case ActionTypes.LOGIN: {
-            // browserhistory.push("/Shop");
             return { ...state }
-
             break;
         }
-
-
         default:
             return state;
     }

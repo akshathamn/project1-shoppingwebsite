@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Button } from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, Button } from 'reactstrap';
 import { Redirect } from 'react-router-dom'
 
 class TableRow extends Component {
@@ -29,7 +29,6 @@ class TableRow extends Component {
           {this.renderRedirect()}
           <Button onClick={this.setRedirect} className="btn btn-danger">Add To Cart</Button>
         </CardBody>
-
       </Card>
 
     );

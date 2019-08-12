@@ -26,9 +26,9 @@ class TableRows extends Component {
     // this.props.handleTotal(-this.props.price);
   }
   delete() {
-      axios.get('http://localhost:3008/product/delete/'+this.props.obj._id)
-          .then(console.log('Deleted'))
-          .catch(err => console.log(err))
+    axios.get('http://localhost:3008/product/delete/' + this.props.obj._id)
+      .then(console.log('Deleted'))
+      .catch(err => console.log(err))
   }
 
   render() {

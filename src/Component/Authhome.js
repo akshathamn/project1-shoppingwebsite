@@ -7,7 +7,7 @@ class Authhome extends Component {
   render() {
     return (
       <div>
-          <AuthNavbar/>
+        <AuthNavbar />
         <img className="col-md-12 col-lg-12" src={shop} alt="logo" />
       </div>
     );

@@ -12,6 +12,7 @@ import Cart from "./Component/Cart";
 import Authhome from "./Component/Authhome";
 // import Shop from './Component/Shop';
 import Adminproduct from './Component/Adminproduct';
+import edit from './Component/edit';
 
 
 function App() {
@@ -28,7 +29,7 @@ function App() {
       <Route exact path='/Cart' component={Cart}></Route> 
       <Route exact path='/Authhome' component={Authhome}></Route> 
       <Route exact path='/Adminproduct' component={Adminproduct}></Route> 
-
+      <Route exact path='/edit' component={edit}></Route> 
     </Switch>
     <Footer />
   </Router>

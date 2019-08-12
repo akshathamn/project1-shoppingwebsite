@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import nature from '../images/nature.jpg';
 import { Button, FormGroup, FormControl } from "react-bootstrap";
 import "./Signup.css";
 import { login } from './UserFunction';
@@ -16,7 +15,7 @@ class Login extends Component {
       pswd: ""
       // submitted: false
     };
-   
+
   }
 
   validateForm() {
@@ -33,7 +32,7 @@ class Login extends Component {
     event.preventDefault();
     const { email, password } = this.state;
     this.setState({ submitted: true });
-   
+
     const user = {
       email: this.state.email,
       password: this.state.password,
@@ -49,7 +48,7 @@ class Login extends Component {
     // let reg_name = /^[A-Za-z]{2,10}$/;
     let reg_pswd = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,15})/;
     let reg_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    // let reg_phn = /^[0-9]{10}$/;
+
 
     if (emailerr === 0) this.setState({ emailerr: '*Email is required' });
     else if (!reg_email.test(this.state.email)) this.setState({ emailerr: '*Invalid Email' });
@@ -66,7 +65,6 @@ class Login extends Component {
     return (
       <div className="Login bg-img">
         <form onSubmit={this.handleSubmit}>
-          {/* <img className="col-md-12 col-lg-12" src={nature} alt="logo"/> */}
           <FormGroup controlId="email" bsSize="large">
             <p>Email</p>
             <FormControl
@@ -76,9 +74,6 @@ class Login extends Component {
               onChange={this.handleChange}
             />
             <p className='msg'>{this.state.emailerr}</p><br></br>
-            {/* {submitted && !email &&
-                    <div className="help-block">email is required</div>
-                  } */}
           </FormGroup>
           <FormGroup controlId="password" bsSize="large">
             <p>Password</p>
@@ -106,7 +101,6 @@ const mapStateToProps = (state) => {
   const { email } = state.Loginreducer;
   const { password } = state.Loginreducer;
   return { email, password };
-
 };
 export default connect(mapStateToProps, { log })(Login);
 

@@ -61,66 +61,65 @@ export default class Addproduct extends Component {
 
   render() {
     return (
-<div class="container">
-  <div class="row">
-    <div className="col-md-12 col-md-12">
-      <AuthNavbar/>
-      </div>
-      </div>
-      <div class="row">
-      <div className="col-md-12 col-md-12">
-
-      <div style={{ marginTop: 30 }}>
-      
-      <h3>Add New Product</h3>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group">
-            <label>Title:  </label>
-            <input
-              type="text"
-              className="form-control"
-              value={this.state.title}
-              onChange={this.onChangeTitle}
-              required
-            />
+      <div class="container">
+        <div class="row">
+          <div className="col-md-12 col-md-12">
+            <AuthNavbar />
           </div>
-          <div className="form-group">
-            <label>Price: </label>
-            <input type="number"
-              className="form-control"
-              value={this.state.price}
-              onChange={this.onChangePrice}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label>Image: </label>
-            <input type="text"
-              className="form-control"
-              value={this.state.image}
-              onChange={this.onChangeImage}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label>Description: </label>
-            <input type="text"
-              className="form-control"
-              value={this.state.description}
-              onChange={this.onChangeDescription}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <input type="submit" value="Add Product" className="btn btn-primary" />
-          </div>
-        </form>
         </div>
-        </div>
+        <div class="row">
+          <div className="col-md-12 col-md-12">
 
-</div>
-</div>
-     
+            <div style={{ marginTop: 30 }}>
+
+              <h3>Add New Product</h3>
+              <form onSubmit={this.onSubmit}>
+                <div className="form-group">
+                  <label>Title:  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    value={this.state.title}
+                    onChange={this.onChangeTitle}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Price: </label>
+                  <input type="number"
+                    className="form-control"
+                    value={this.state.price}
+                    onChange={this.onChangePrice}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Image: </label>
+                  <input type="text"
+                    className="form-control"
+                    value={this.state.image}
+                    onChange={this.onChangeImage}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label>Description: </label>
+                  <input type="text"
+                    className="form-control"
+                    value={this.state.description}
+                    onChange={this.onChangeDescription}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <input type="submit" value="Add Product" className="btn btn-primary" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     )
   }
 }

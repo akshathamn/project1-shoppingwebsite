@@ -4,9 +4,9 @@ import './Home.css';
 class Footer extends Component {
   render() {
     return (
-      <div>
+      <div >
         <div className="footer bgcol">
-          <div className="row footer">
+          <div className="row footer container">
             <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4 color">
               <p><strong class="contact-title">Contact Us</strong><p>Need help? Call us at <a href="tel:18004617960" class="tel link" itemprop="telephone">1-800-461–7960</a>, send us an <a href="mailto:info@henrys.com" itemprop="email" class="link">email</a> or visit <a href="/customer-care.aspx" class="link">customer care</a> for more information.</p></p>
             </div>
@@ -47,42 +47,3 @@ class Footer extends Component {
 export default Footer;
 
 
-
-// import React from "react";
-
-// export default () => {
-//   return (
-//     <footer className="bg-dark text-white mt-5 p-2">
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-md-4 mb-4">
-//             <a>
-//               <i className="fab fa-facebook mr-3" />
-//             </a>
-//             <a>
-//               <i className="fab fa-twitter mr-3" />
-//             </a>
-//             <a>
-//               <i className="fab fa-instagram mr-3" />
-//             </a>
-//           </div>
-//           <div className="col-md-4 mb-4">
-//             Copyright &copy; {new Date().getFullYear()}
-//             <a href="#"> ShopDemo</a>
-//           </div>
-//           <div className="col-md-4 mb-4">
-//             <a>
-//               <i className="fas fa-home mr-3" />
-//             </a>
-//             <a>
-//               <i className="fas fa-users mr-3" />
-//             </a>
-//             <a>
-//               <i className="fas fa-phone mr-3" />
-//             </a>
-//           </div>
-//         </div>
-//       </div>
-//     </footer>
-//   );
-// };

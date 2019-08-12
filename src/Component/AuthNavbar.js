@@ -15,8 +15,8 @@ class AuthNavbar extends Component {
       <div>
         <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-warning ">
           <a class="nav-item ">
-            <img class="img1" src={require('../images/brand1.png')} alt="Card image cap"></img></a>
-          <a class="navbar-brand" href="#">Shopper'sSite</a>
+            <img class="img1" src={require('../images/ssite.png')} alt="Card image cap"></img></a>
+          <a class="navbar-brand" href="#"><h3>Shopper'sSite</h3></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -39,12 +39,6 @@ class AuthNavbar extends Component {
               </li>
               {/* <li class="nav-item">
                   <a class="nav-link" href="#">Orders</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Addproduct</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Adminproduct</a>
                 </li> */}
             </ul>
             <form class="form-inline my-2 my-lg-0">
