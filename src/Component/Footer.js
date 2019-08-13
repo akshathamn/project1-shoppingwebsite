@@ -18,7 +18,7 @@ class Footer extends Component {
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
                     <div className="col-xs-4 col-sm-4 col-md-4 col-lg-4"></div>
-                  </div ><h5><b>Hennry Shopping</b></h5>
+                  </div ><h5><b>Shopper's Site</b></h5>
                   <p>1021 Park Street, Regina, SK S4N 5H4, Canada</p>
                 </div>
                 <div className="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
@@ -32,8 +32,8 @@ class Footer extends Component {
                   <SocialIcon url="https://www.facebook.com/" />
                   <SocialIcon url="https://www.email.com/" />
                   <SocialIcon url="https://www.whatsapp.com/" />
-                  <SocialIcon url="https://www.skype.com/" />
-                  <SocialIcon url="http://linkedin.com/" /> <br /> <p>Copyright @ All rights reserved</p></div>
+                  <SocialIcon url="https://www.skype.com/" /> <br />
+                   <p>Copyright @ All rights reserved</p></div>
                 <div className="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
               </div>
             </div>

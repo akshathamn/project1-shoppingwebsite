@@ -38,7 +38,6 @@ export default class Index extends Component {
           </thead>
           <tbody>
             {this.tabRow()}
-
           </tbody>
         </table>
       </div>

@@ -40,7 +40,7 @@ class Login extends Component {
     }
     login(user).then(res => {
       if (email && password) {
-        this.props.history.push('/Authhome')
+        // this.props.history.push('/Authhome')
       }
     })
     let temp1 = 0;
@@ -56,8 +56,8 @@ class Login extends Component {
     if (pswd === 0) this.setState({ pswd: '*Password is required' });
     else if (!reg_pswd.test(this.state.password)) this.setState({ pswd: '*Invalid Password' });
     else temp1++;
-    if (temp1 > 3) {
-      this.props.history.push('/login')
+    if (temp1 > 1) {
+      this.props.history.push('/Authhome')
     }
   }
 

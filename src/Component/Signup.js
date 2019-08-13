@@ -45,11 +45,11 @@ class Signup extends Component {
     }
     signup(user).then(res => {
       if (email && password && confirmpassword) {
-        this.props.history.push('/login')
+        // this.props.history.push('/login')
       }
     })
 
-
+debugger
     let temp1 = 0;
     let emailerr = this.state.email.length, pswd = this.state.password.length, cpswd = this.state.confirmpassword.length;
     // let reg_name = /^[A-Za-z]{2,10}$/;
@@ -66,7 +66,7 @@ class Signup extends Component {
     if (cpswd === 0) this.setState({ cpswd: '*confirmpassword is required' });
     else if (!reg_cpswd.test(this.state.confirmpassword)) this.setState({ cpswd: '*Invalid Password' });
     else temp1++;
-    if (temp1 > 3) {
+    if (temp1 > 2) {
       this.props.history.push('/login')
     }
   }
