@@ -76,7 +76,7 @@ debugger
       <div className="Login bg-signup">
         <form onSubmit={this.handleSubmit}>
           <FormGroup controlId="email" bsSize="large">
-            <p>Email</p>
+            <b>Email</b>
             <FormControl
               autoFocus
               type="email"
@@ -86,7 +86,7 @@ debugger
             <p className='msg'>{this.state.emailerr}</p><br></br>
           </FormGroup>
           <FormGroup controlId="password" bsSize="large">
-            <p>Password</p>
+            <b>Password</b>
             <FormControl
               value={this.state.password}
               onChange={this.handleChange}
@@ -95,7 +95,7 @@ debugger
             <p className='msg'>{this.state.pswd}</p><br></br>
           </FormGroup>
           <FormGroup controlId="confirmpassword" bsSize="large">
-            <p>ConfirmPassword</p>
+            <b>ConfirmPassword</b>
             <FormControl
               value={this.state.confirmpassword}
               onChange={this.handleChange}

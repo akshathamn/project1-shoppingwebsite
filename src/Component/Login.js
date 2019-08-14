@@ -76,7 +76,7 @@ class Login extends Component {
             <p className='msg'>{this.state.emailerr}</p><br></br>
           </FormGroup>
           <FormGroup controlId="password" bsSize="large">
-            <p>Password</p>
+            <b>Password</b>
             <FormControl
               value={this.state.password}
               onChange={this.handleChange}
