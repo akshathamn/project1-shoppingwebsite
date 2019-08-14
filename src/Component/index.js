@@ -9,7 +9,6 @@ export default class Index extends Component {
     this.state = { product: [] };
   }
   componentDidMount() {
-    // debugger;
     axios.get('http://localhost:3008/product/getproduct')
       .then(response => {
         this.setState({ product: response.data });

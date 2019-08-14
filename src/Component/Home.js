@@ -8,8 +8,7 @@ class Home extends Component {
     return (
       <div className='slidebody'>
         <Navbar />
-        {/* <img className="col-md-12 col-lg-12" src={shop} alt="logo" /> */}
-        <div id="bgimage">
+       <div id="bgimage">
           <MDBContainer>
             <MDBCarousel
               activeItem={1}

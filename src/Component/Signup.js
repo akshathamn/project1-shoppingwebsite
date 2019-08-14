@@ -30,14 +30,9 @@ class Signup extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    // }
-
     const { email, password, confirmpassword } = this.state;
     this.setState({ submitted: true });
-    // if (firstName && username && email && password && confirmPassword && mobileNumber) {
-    // this.props.history.push('/login');
 
-    // }
     const user = {
       email: this.state.email,
       password: this.state.password,
@@ -49,10 +44,9 @@ class Signup extends Component {
       }
     })
 
-debugger
+    debugger
     let temp1 = 0;
     let emailerr = this.state.email.length, pswd = this.state.password.length, cpswd = this.state.confirmpassword.length;
-    // let reg_name = /^[A-Za-z]{2,10}$/;
     let reg_pswd = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,15})/;
     let reg_cpswd = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,15})/;
     let reg_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;

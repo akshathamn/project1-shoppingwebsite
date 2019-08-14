@@ -45,7 +45,6 @@ class Login extends Component {
     })
     let temp1 = 0;
     let emailerr = this.state.email.length, pswd = this.state.password.length;
-    // let reg_name = /^[A-Za-z]{2,10}$/;
     let reg_pswd = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,15})/;
     let reg_email = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
