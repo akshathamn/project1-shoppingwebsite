@@ -30,7 +30,7 @@ export default class Index extends Component {
       <div>
         <AuthNavbar />
         <h3 align="center">Product List</h3>
-        <table className="table table-striped" style={{ marginTop: 30 }}>
+        <table className="table table-striped" style={{ marginTop: 80 }}>
           <thead>
             <tr>
               <th>Welcome,Add Your Products to Cart</th>

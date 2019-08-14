@@ -70,7 +70,7 @@ export default class Addproduct extends Component {
         <div class="row">
           <div className="col-md-12 col-md-12">
 
-            <div style={{ marginTop: 30 }}>
+            <div style={{ marginTop: 80 }}>
 
               <h3>Add New Product</h3>
               <form onSubmit={this.onSubmit}>
