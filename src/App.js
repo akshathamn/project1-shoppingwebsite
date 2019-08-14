@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {Elements, StripeProvider} from 'react-stripe-elements';
 import Signup from './Component/Signup';
 import Login from './Component/Login';
 // import Navbar from './Component/Navbar';
@@ -13,6 +14,8 @@ import Authhome from "./Component/Authhome";
 import index from './Component/index';
 import Adminproduct from './Component/Adminproduct';
 import edit from './Component/edit';
+
+import CheckoutForm from './Component/CheckoutForm';
 
 
 function App() {
@@ -31,6 +34,14 @@ function App() {
       <Route exact path='/Adminproduct' component={Adminproduct}></Route> 
       <Route exact path='/edit' component={edit}></Route> 
 
+ <StripeProvider apiKey="pk_test_TYooMQauvdEDq54NiTphI7jx">
+        <div className="example">
+          <h1>Shopper's Site</h1>
+          <Elements>
+            <CheckoutForm />
+          </Elements>
+        </div>
+      </StripeProvider> 
 
       {/* <PrivateRoute exact path='/Addproduct' component={Addproduct}></PrivateRoute>
       <PrivateRoute exact path='/index' component={index}></PrivateRoute>

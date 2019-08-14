@@ -2,11 +2,25 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import TableRows from './TableRows';
 import AuthNavbar from './AuthNavbar';
+import { Redirect } from 'react-router-dom'
 
 export default class Cart extends Component {
   constructor(props) {
     super(props);
     this.state = { product: [] };
+  }
+  state = {
+    redirect: false
+  }
+  setRedirect = () => {
+    this.setState({
+      redirect: true
+    })
+  }
+  renderRedirect = () => {
+    if (this.state.redirect) {
+      return <Redirect to='/CheckoutForm' />
+    }
   }
 
   componentDidMount() {
@@ -28,13 +42,14 @@ export default class Cart extends Component {
 
   render() {
     return (
-      <div style={{ marginTop: 90 }}>
+      <div style={{ marginTop: 120 }}>
         <AuthNavbar />
         <h3 align="center">Cart List</h3>
         <table className="table table-striped" style={{ marginTop: 20 }}>
           <tbody>
             {this.tabRow()}
-            <button className="btn btn-danger">Order Now!</button>
+            {this.renderRedirect()}
+            <button onClick={this.setRedirect} className="btn btn-danger">Order Now!</button>
           </tbody>
         </table>
       </div>

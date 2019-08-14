@@ -19,7 +19,7 @@ export default class Edit extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:4000/adminproduct/editadminproduct/' + this.props.match.params.id)
+    axios.get('http://localhost:3008/adminproduct/editadminproduct/' + this.props.match.params.id)
       .then(response => {
         this.setState({
           title: response.data.title,
@@ -61,7 +61,7 @@ export default class Edit extends Component {
       image: this.state.image,
       description: this.state.description
     };
-    axios.post('http://localhost:4000/adminproduct/updateadminproduct/' + this.props.match.params.id, obj)
+    axios.post('http://localhost:3008/adminproduct/updateadminproduct/' + this.props.match.params.id, obj)
       .then(res => console.log(res.data));
     this.props.history.push('/Cart')
     console.log(`The values are ${this.state.title}, ${this.state.price},  ${this.state.image}and  ${this.state.description}`)

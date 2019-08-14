@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-// import shop from '../images/shop.jpeg';
 import './Home.css';
 import browserHistory from '../Utils/browserHistory';
-
 
 class AuthNavbar extends Component {
   handlepress = () => {
     debugger
     browserHistory.push('/');
   }
-
   render() {
     return (
       <div>
@@ -22,9 +19,6 @@ class AuthNavbar extends Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-              {/* <li class="nav-item ">
-                  <a class="nav-link" href="./Products">Shop<span class="sr-only">(current)</span></a>
-                </li> */}
               <li class="nav-item">
                 <a class="nav-link" href="./Addproduct">AddProducts</a>
               </li>
@@ -35,11 +29,11 @@ class AuthNavbar extends Component {
                 <a class="nav-link" href="./cart">Cart</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="./CheckoutForm">Order</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link" href="./Adminproduct">Adminproduct</a>
               </li>
-              {/* <li class="nav-item">
-                  <a class="nav-link" href="#">Orders</a>
-                </li> */}
             </ul>
             <form class="form-inline my-2 my-lg-0">
               <button class="btn btn-outline-secondary my-2 mr-sm-0" type="submit" onClick={this.handlepress}>Logout</button>

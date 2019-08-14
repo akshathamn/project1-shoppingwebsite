@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-// import shop from '../images/shop.jpeg';
 import './Home.css';
 import browserHistory from '../Utils/browserHistory';
-
 
 class Navbar extends Component {
   handlepress = () => {
@@ -26,7 +24,7 @@ class Navbar extends Component {
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
-           </ul>
+            </ul>
             <form class="form-inline my-2 my-lg-0">
               <button class="btn btn-outline-danger mr-sm-2" type="submit" onClick={this.handlepress} >Signup</button>
               <button class="btn btn-outline-success my-2 my-sm-0" type="submit " onClick={this.handlepress1}>Login</button>
@@ -37,5 +35,4 @@ class Navbar extends Component {
     );
   }
 }
-
 export default Navbar;
